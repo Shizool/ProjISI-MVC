@@ -6,7 +6,7 @@
         <main class="centered">
             <h1><%= product.title %></h1>
             <hr>
-            <h2><%= product.price %> zł</h2>
+            <h2><%= product.price.toFixed(2) %> zł</h2>
             <p><%= product.description %></p>
         </main>
         <%- include('includes/end.ejs') %>
